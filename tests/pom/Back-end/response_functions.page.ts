@@ -12,7 +12,6 @@ export default class ResponseTest
     {
         const RESPONSE = await request.get(`${baseURL}${search}`);
         const RESPONSE_BODY = await RESPONSE.json();
-        
         await expect(RESPONSE.ok()).toBeTruthy();
         await expect(RESPONSE.status()).toBe(200);
         await expect(RESPONSE_BODY.query).toBe('CELULAR');
@@ -22,7 +21,6 @@ export default class ResponseTest
     {
         const RESPONSE = await req.get(`${baseURL}${id_item}`);
         const RESPONSE_BODY = await RESPONSE.json();
-
         await expect(RESPONSE_BODY.id).toBe(id_item);
         await expect(RESPONSE_BODY.accepts_mercadopago).toBe(true);
         await expect(RESPONSE_BODY.price).toBe(94999);
