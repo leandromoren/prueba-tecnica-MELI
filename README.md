@@ -1,6 +1,8 @@
 # prueba-tecnica-MELI
 Prueba técnica de Mercado Libre
 
+Para esta prueba utilice **Playwright** como herramienta
+
 A continuacion les voy a dejar las consignas que se requerian para hacer los tests
 
 ## Ejercicio 1
